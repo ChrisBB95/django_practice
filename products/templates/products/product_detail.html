@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ obj.title }}</h1>
+<p>Description: {{ obj.description }}</p>
+<p>Price: ${{ obj.price }}</p>
+<p>Summary: {{ obj.summary }}</p>
+<p>Featured?: {{ obj.featured }}</p>
+
+{% endblock %}

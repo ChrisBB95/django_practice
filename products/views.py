@@ -8,11 +8,7 @@ def product_detail_view(request):
     obj = Product.objects.get(id=4)
 
     context = {
-        'title': obj.title,
-        'description': obj.description,
-        'price': obj.price,
-        'summary': obj.summary,
-        'featured': obj.featured
+        'obj': obj
     }
 
-    return render(request, "product/detail.html", context)
+    return render(request, "products/product_detail.html", context)
